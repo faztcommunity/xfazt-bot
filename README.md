@@ -11,10 +11,10 @@ Sus principales funcionaledades serán:
 
 ## Pre-requisitos de instalación
 
-- Node.JS 14.15 o superior instalado
+- Node.JS 14.x o superior instalado
 - Git (cualquier versión) instalado.
 - Bash o Powershell para ejecucion de comandos al S.O
-- Y si tienes pensado modificar el código o contribuir, un entorno de desarrollo bien configurado. Nosotros utilizamos Visual Studio Code (VSC) y todas las futuras guias y/o recomendaciones se harán basadas en el mismo. **No olvides leer la sección [COLABORANDO](#colaborando) y el documento [CONTRIBUTING.md](./CONTRIBUTING.md)**
+- **Si deseas aportar, o modificar al proyecto no olvides leer la sección [COLABORANDO](#colaborando) y el documento [CONTRIBUTING.md](./CONTRIBUTING.md)**
 
 ## Instalacion
 
@@ -23,7 +23,7 @@ Sus principales funcionaledades serán:
 ```bash
 git clone https://github.com/faztcommunity/xfazt-bot.git
 ```
-- Instala las dependencias mediante npm:
+- Estando en la raiz del proyecto, instala las dependencias mediante npm:
 
 ```bash
 npm install
