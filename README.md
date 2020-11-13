@@ -14,7 +14,7 @@ Sus principales funcionaledades serán:
 - Node.JS 14.x o superior instalado
 - Git (cualquier versión) instalado.
 - Bash o Powershell para ejecucion de comandos al S.O
-- **Si deseas aportar, o modificar al proyecto no olvides leer la sección [COLABORANDO](#colaborando) y el documento [CONTRIBUTING.md](./CONTRIBUTING.md)**
+- **Si deseas aportar, o modificar al proyecto no olvides leer la sección [COLABORANDO](#colaborando) y el documento [CONTRIBUTING.md](./.github/CONTRIBUTING.md)**
 
 ## Instalacion
 
@@ -39,7 +39,7 @@ npm install
 ## Colaborando
 Si lo que buscas es ayudar con el proyecto y conectar con una gran comunidad de desarrolladores de habla Hispana, entonces haz llegado al lugar correcto.
 
-En **primer lugar** asegúrate de leer bien la documentacion que preparamos con mucho cariño, y principalmente el archivo [CONTRIBUTING.md](./CONTRIBUTING.md) donde encontratas todas las guias necesarias para saber que hacer y entender como nos manejamos.
+En **primer lugar** asegúrate de leer bien la documentacion que preparamos con mucho cariño, y principalmente el archivo [CONTRIBUTING.md](./.github/CONTRIBUTING.md) donde encontratas todas las guias necesarias para saber que hacer y entender como nos manejamos.
 
 En **segundo lugar**, puedes ingresar a la sección [ISSUES](https://github.com/faztcommunity/xfazt-bot/issues) de nuestro repositorio. Donde encontrarás todas las características, bugs y aportes que estamos trabajando. Si estas perdido por cual comenzar, utilizamos el tag "good first issue" para identificar aquellos asuntos que son un buen punto de entrada para nuevos. Si lo que quieres es sugerir alguna nueva característica o reportar un bug que encontraste, puedes hacerlo creando un nuevo ISSUE (siguiendo las pautas que ya leíste :wink: )
 
