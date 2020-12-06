@@ -1,8 +1,13 @@
 # Contributing
 
 Antes de contribuir en este repositorio, por favor
+<<<<<<< HEAD
  * lee el [README.md](https://github.com/faztcommunity/xfazt-bot/blob/master/README.md),
  * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/faztcommunity/xfazt-bot/blob/master/CODE_OF_CONDUCT.md),
+=======
+ * lee el [README.md](https://github.com/faztcommunity/xfazt-bot/blob/main/README.md),
+ * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/faztcommunity/xfazt-bot/blob/main/.github/CODE_OF_CONDUCT.md),
+>>>>>>> 168cc85320ee6f5814deeef53ab79a0d8af02c2e
  * visita nuestros [issues](https://github.com/faztcommunity/xfazt-bot/issues),
  * lee los [lineamientos de nuestra comunidad](https://faztcommunity.github.io/fazt-community-docs)
  * considera formar parte de la discusión en nuestra comunidad de [Discord](https://discord.gg/rg3fKr6),
@@ -26,6 +31,7 @@ En un inicio, fazt-bot debería ser capaz de:
  * Manejar un ranking de usuarios y contribuidores de la comunidad. 
  * Muchos comandos de utilidad y de no mucha utilidad, pero interesantes. 
 
+<<<<<<< HEAD
 ## Contribuir
 Si es tu primera vez, considera nuevamente leer mi [guía](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd) 
 Recuerda seguir los [lineamientos de contribución](https://faztcommunity.github.io/fazt-community-docs) de Fazt Community
@@ -41,6 +47,28 @@ Ejecuta `npm run dev` y verifica que todo funcione.
 Para picar código, no olvides tener la extension [eslint](https://eslint.org/) instalada en tu editor de código favorito. 
 
 Lee los [issues](https://github.com/faztcommunity/xfazt-bot/issues), selecciona la tarea, y desarrolla la solución. 
+=======
+Como desarrollo en paralelo, se lleva a cabo una librería que aporta funcionalidades antispam y antiraid en los servidors de Discord. <br>
+Para más información: https://github.com/faztcommunity/DBS/
+
+## Contribuir
+Si es tu primera vez, considera nuevamente leer mi [guía](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd) 
+Recuerda seguir los [lineamientos de contribución](https://faztcommunity.github.io/fazt-community-docs) de Fazt Community
+Tanto para pull requests como para nuevos issues, usa los labels adecuados. 
+
+### Primeros pasos
+En la raíz del proyecto, ejecuta el comando `npm i`.<br>
+Crea un archivo `.env` también en la raiz del proyecto y añade tus variables de entorno. <br>
+Crea y trabaja sobre una nueva rama.<br>
+
+Lee los [issues](https://github.com/faztcommunity/xfazt-bot/issues), selecciona la tarea, y desarrolla la solución. 
+
+Para picar código, no olvides tener la extension [eslint](https://eslint.org/) instalada en tu editor de código favorito. 
+
+Realiza tus cambios y asegurate de abarcar unicamente la tarea encomendada.
+
+Ejecuta `npm run dev` y verifica que todo funcione. 
+>>>>>>> 168cc85320ee6f5814deeef53ab79a0d8af02c2e
 
 #### Variables de entorno 
 Asegurate de tener las variables de entorno esenciales para correr los tests o la totalidad de las funcionalidades. <br>
@@ -95,10 +123,13 @@ Para poder realizar un Pull Request, primero debe de haber un issue.
 * ts-node:<br>
 *descripción...*
 
+<<<<<<< HEAD
 * typescript:<br>
 *descripción...*
 
 
+=======
+>>>>>>> 168cc85320ee6f5814deeef53ab79a0d8af02c2e
 ### Estilo
 Programar con estilo es clave. <br>
 Algunas buenas prácticas: 
