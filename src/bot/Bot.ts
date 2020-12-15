@@ -1,10 +1,12 @@
 import {Client} from "discord.js";
 import {bot_config} from "./bot_types";
+import OnCommandObservable from "../components/oncommand/OnCommand";
 
 export default class Bot {
     readonly client:Client
     readonly prefix:string
     readonly guild_id:string
+    private _command_handler?:OnCommandObservable
 
     constructor(config:bot_config, discord_client:Client){
         this.client = discord_client;
@@ -34,5 +36,20 @@ export default class Bot {
     public async start(token:string):Promise<void> {
         await this._prestart();
         this.client.login(token);
+    }
+
+    /**
+     * Inyecta un command_handler que respete la interfaz OnCommandObservable
+     * @see LINK_A_LA_DOCUMENTACIÓN
+     */
+    public set command_handler(command_handler:OnCommandObservable|undefined) {
+        if(command_handler) this._command_handler = command_handler;
+    }
+
+    /**
+     * Obtiene el command_handler
+     */
+    public get command_handler():OnCommandObservable|undefined {
+        return this._command_handler;
     }
 }

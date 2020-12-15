@@ -1,10 +1,17 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 if(process.env.NODE_ENV === "development") require("dotenv").config();
-import {Client} from "discord.js";
+import {Client, Message} from "discord.js";
 import Bot from "./bot/Bot";
 import { bot_config } from "./bot/bot_types";
-import OnReady from "./listeners/onready/OnReady";
-import Log from "./functionalities/Log";
+
+//Los imports deben ir también en otro archivo controlador donde se hagan las instancias.
+import OnReady from "./components/onready/OnReady";
+import Ready from "./components/onready/observers/ready/Ready";
+
+import OnMessage from "./components/onmessage/OnMessage";
+import Ping from "./components/oncommand/commands/ping/Ping";
+
+import OnCommand from "./components/oncommand/OnCommand";
 
 class Main {
     public static main():void {
@@ -22,11 +29,28 @@ class Main {
         const bot_token = process.env.BOT_TOKEN;
         if(!bot_token) throw new Error("El token del bot no está definido");
 
-        const on_ready = new OnReady(client);
+        // Las instancias deben ser creadas en un controllador
+        // para los componentes
 
-        const log = new Log();
+        // ready --
+        const on_ready = new OnReady();
+        const ready = new Ready();
+        on_ready.add_observer(ready);
 
-        on_ready.add_observer(log);
+        bot.client.on("ready", () => on_ready.handle());
+
+        //message --
+        const on_message = new OnMessage(bot);
+
+        bot.client.on("message", (message:Message) => on_message.handle(message));
+
+        //commands --
+        const on_command = new OnCommand();
+        const ping = new Ping();
+
+        on_command.add_observer(ping);
+
+        bot.command_handler = on_command;
 
         bot.start(bot_token);
     }
