@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/faztcommunity/xfazt-bot/discussions
+    about: Considera colocar nuevas ideas en la sección de discusiones
