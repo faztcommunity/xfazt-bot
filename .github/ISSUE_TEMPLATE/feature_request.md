@@ -13,6 +13,6 @@ labels: 'Type: Enhancement'
 <!-- Aqui dinos como esperas lograrlo (por ejemplo que archivos, librerias, funciones utilizarás, patrones de diseño, etc) -->
 ...
 
-### Screens/ Maquetado idea
+### Screens / Maquetado idea
 <!-- Si ya tienes la implementación hecha o algún grafico que muestre lo que tienes, por favor colócalo por aqui. -->
 ...
