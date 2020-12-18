@@ -1,5 +1,5 @@
 ---
-name: Nuevo requisito 
+name: Nuevo requisito 🔧
 about: Un nuevo requisito funcional o no funcional.
 title: 'Se requiere <titulo de la funcionalidad>'
 labels: 'Type: Enhancement'
