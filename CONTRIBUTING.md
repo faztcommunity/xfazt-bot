@@ -69,8 +69,8 @@ Evitá lo mas posible el uso de funciones individuales.
 Para poder realizar un Pull Request, primero debe de haber un issue.
 
 ### Dependencias
-Para conocer las dependencias visita la wiki.
-<!--url a la wiki-->
+Para conocer las dependencias visita la wiki. <br>
+https://github.com/faztcommunity/xfazt-bot/wiki/Dependencias
 
 ### Estilo
 Programar con estilo es clave. <br>
