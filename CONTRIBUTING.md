@@ -2,11 +2,12 @@
 
 Antes de contribuir en este repositorio, por favor
  * lee el [README.md](https://github.com/faztcommunity/xfazt-bot/blob/main/README.md),
- * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/faztcommunity/xfazt-bot/blob/main/.github/CODE_OF_CONDUCT.md),
  * visita nuestros [issues](https://github.com/faztcommunity/xfazt-bot/issues),
- * lee los [lineamientos de nuestra comunidad](https://faztcommunity.github.io/fazt-community-docs)
- * considera formar parte de la discusión en nuestra comunidad de [Discord](https://discord.gg/rg3fKr6),
- * si es tu primera vez, lee un resumen de cómo contribuir: [Contribuir por primera vez en Github](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd)
+ * revisa la [wiki](https://github.com/faztcommunity/xfazt-bot/wiki),
+ * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/faztcommunity/xfazt-bot/blob/main/.github/CODE_OF_CONDUCT.md),
+ * lee los [lineamientos de nuestra comunidad](https://faztcommunity.github.io/fazt-community-docs),
+ * considera formar parte de la discusión en nuestra comunidad de [Discord](https://discord.gg/rg3fKr6) o en [Discussions](https://github.com/faztcommunity/xfazt-bot/discussions),
+ * si es tu primera vez, lee un resumen de cómo contribuir: [Contribuir por primera vez en Github](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd),
  * termina de leer este archivo. 
 
 Crea un issue planteando el problema a resolver y espera una respuesta. </br>
@@ -19,20 +20,12 @@ FaztBot nace con la necesidad de administrar el servidor de la comunidad en Disc
 
 A su vez, este es un proyecto de espíritu colaborativo, por lo que toda la construcción del proyecto gira en torno al opensource y el aprendizaje. 
 
-En un inicio, fazt-bot debería ser capaz de:
- * Mediante una orden, moderar usuarios.
-   * Warn, mute, kick, ban, etc, añadiendo y notificando el motivo. 
- * Prevenir ataques de spam, estafas, multicuentas y otras técnicas que rompan las reglas del servidor. 
- * Manejar un ranking de usuarios y contribuidores de la comunidad. 
- * Muchos comandos de utilidad y de no mucha utilidad, pero interesantes. 
-
-Como desarrollo en paralelo, se lleva a cabo una librería que aporta funcionalidades antispam y antiraid en los servidors de Discord. <br>
-Para más información: https://github.com/faztcommunity/DBS/
+<!-- Como desarrollo en paralelo, se lleva a cabo una librería que aporta funcionalidades antispam y antiraid en los servidors de Discord. <br>
+Para más información: https://github.com/faztcommunity/DBS/ -->
 
 ## Contribuir
-Si es tu primera vez, considera nuevamente leer mi [guía](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd) 
-Recuerda seguir los [lineamientos de contribución](https://faztcommunity.github.io/fazt-community-docs) de Fazt Community
-Tanto para pull requests como para nuevos issues, usa los labels adecuados. 
+Si es tu primera vez, considera nuevamente leer mi [guía](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd)
+Tanto para pull requests como para nuevos issues, usa los labels adecuados.
 
 ### Primeros pasos
 En la raíz del proyecto, ejecuta el comando `npm i`.<br>
@@ -49,9 +42,9 @@ Ejecuta `npm run dev` y verifica que todo funcione.
 
 #### Variables de entorno 
 Asegurate de tener las variables de entorno esenciales para correr los tests o la totalidad de las funcionalidades. <br>
-*Aquellas funcionalidades que dependan de una apikey o similar, lanzaran un error que será mostrado por consola, sin afectar el funcionamiento de otras.*
+*Aquellas funcionalidades que dependan de una apikey o similar, lanzaran un error que será mostrado por consola, sin afectar el funcionamiento de otras funcionalidades.*
 
-*En progreso...*
+ * TOKEN_BOT - [*?*](https://discord.com/developers/)
 
 ### Estructura
 *En progreso...*
@@ -76,29 +69,8 @@ Evitá lo mas posible el uso de funciones individuales.
 Para poder realizar un Pull Request, primero debe de haber un issue.
 
 ### Dependencias
-* cross-env:<br>
-*descripción...*
-
-* dotenv:<br>
-*descripción...*
-
-* eslint:<br>
-*descripción...*
-
-* eslint-config-prettier:<br>
-*descripción...*
-
-* husky:<br>
-*descripción...*
-
-* nodemon:<br>
-*descripción...*
-
-* prettier:<br>
-*descripción...*
-
-* ts-node:<br>
-*descripción...*
+Para conocer las dependencias visita la wiki. <br>
+https://github.com/faztcommunity/xfazt-bot/wiki/Dependencias
 
 ### Estilo
 Programar con estilo es clave. <br>
@@ -111,10 +83,15 @@ Algunas buenas prácticas:
 * Evita más de dos parámetros por función/método, sino se entiende que esa función hace demasiadas cosas.
 * Define los tipos de datos siempre, incluyendo los de retorno. 
 * Colocale nombres descriptivos a las funciones/métodos. Asegúrate que éstas o hagan exactamente lo que dice su nombre.
-* Evitar las funciones flechas en funciones no anónimas.
-* Usar doble comillas `"` para manejar strings.
-* Siempre declarar variable con su respectivo tipo.
+* Evitar las funciones anonimas en funciones que no son anónimas.
+* Usar comillas doble `"` para manejar strings.
+* Siempre declarar parametros con su respectivo tipo.
 * Usar el paradigma orientado a objetos.
-* Patrones a usar: decorador y delegación.
+* Patrones predominantes: Observer, Decorador, Delegación
 
-La documentación se puede hacer en español (recomendado para este proyecto) o ingles según su preferencia.
+La documentación se puede hacer en español (recomendado para este proyecto) o ingles, como quieras.
+
+### Esqueleto
+Conoce la estructura principal, el esqueleto de la aplicación en<br>
+https://github.com/faztcommunity/xfazt-bot/wiki/Manifiesto-xFazt-bot
+
