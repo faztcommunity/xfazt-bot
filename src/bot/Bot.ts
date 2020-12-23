@@ -1,7 +1,7 @@
 import {Client} from "discord.js";
 import {bot_config} from "./bot_types";
-import EventChannel from "./broker/EventChannel";
-import BotEvents, {bot_event, client_event} from "./broker/BotEvents";
+import EventChannel from "./eventbroker/EventChannel";
+import BotEvents, {bot_event, client_event} from "./eventbroker/BotEvents";
 
 /**
  * Clase minima para la creación de bots

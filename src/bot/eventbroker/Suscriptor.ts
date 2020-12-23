@@ -30,5 +30,5 @@ export default abstract class Suscriptor<Event extends bot_event> {
      * Función llamada cada vez que se lea un evento en el canal de eventos.
      * @param args Argumentos de la notificación.
      */
-    abstract notified(...args:BotEvents[Event]):void;
+    public abstract notified(...args:BotEvents[Event]):void;
 }
