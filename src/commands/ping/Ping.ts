@@ -9,5 +9,3 @@ export default class Ping extends Command {
         message.channel.send("pong!");
     }
 }
-
-new Ping();
