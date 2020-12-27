@@ -63,6 +63,7 @@ Por último si quieres contactar con quienes estan incolucrados en este proyecto
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://enzodiaz.dev"><img src="https://avatars3.githubusercontent.com/u/37701477?v=4" width="100px;" alt=""/><br /><sub><b>Lottie</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Code">💻</a> <a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/leandiez"><img src="https://avatars3.githubusercontent.com/u/8433725?v=4" width="100px;" alt=""/><br /><sub><b>SolidFox</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=leandiez" title="Documentation">📖</a></td>
   </tr>
 </table>
@@ -70,7 +71,6 @@ Por último si quieres contactar con quienes estan incolucrados en este proyecto
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
 Este proyecto sigue las especificaciones de [all-contributors](https://github.com/all-contributors/all-contributors). ¡Cualquier contribución es bienvendia!
 
 ---

@@ -6,6 +6,16 @@
   "commit": false,
   "contributors": [
     {
+      "login": "EnzoDiazDev",
+      "name": "Lottie",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/37701477?v=4",
+      "profile": "https://enzodiaz.dev",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
       "login": "leandiez",
       "name": "SolidFox",
       "avatar_url": "https://avatars3.githubusercontent.com/u/8433725?v=4",
@@ -15,7 +25,7 @@
       ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 5,
   "projectName": "xfazt-bot",
   "projectOwner": "faztcommunity",
   "repoType": "github",
