@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "EnzoDiazDev",
+      "name": "Lottie",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/37701477?v=4",
+      "profile": "https://enzodiaz.dev",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "xfazt-bot",
+  "projectOwner": "faztcommunity",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
