@@ -1,4 +1,7 @@
 # xFaztBot para Fazt Community
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![dev chat](https://discordapp.com/api/guilds/466723723853037589/widget.png?style=shield)](https://discord.gg/mFUY4sT)
 
 xFaztBot es el modulo principal del Bot de Discord para [Fazt Community](https://github.com/faztcommunity), basado en la filosofía OpenSource y pensado para quienes buscan aprender y desarrollar sus capacidades en **JavaScript**, **Typescript**, paradigmas de programación, **Bots** y sobre todo de **trabajo en equipo**.
@@ -60,3 +63,22 @@ Por último si quieres contactar con quienes estan incolucrados en este proyecto
 
 ### Colaboradores
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://enzodiaz.dev"><img src="https://avatars3.githubusercontent.com/u/37701477?v=4" width="100px;" alt=""/><br /><sub><b>Lottie</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
