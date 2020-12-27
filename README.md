@@ -1,8 +1,7 @@
 # xFaztBot para Fazt Community
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![dev chat](https://discordapp.com/api/guilds/466723723853037589/widget.png?style=shield)](https://discord.gg/mFUY4sT)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-[![dev chat](https://discordapp.com/api/guilds/466723723853037589/widget.png?style=shield)](https://discord.gg/mFUY4sT)
 
 xFaztBot es el modulo principal del Bot de Discord para [Fazt Community](https://github.com/faztcommunity), basado en la filosofía OpenSource y pensado para quienes buscan aprender y desarrollar sus capacidades en **JavaScript**, **Typescript**, paradigmas de programación, **Bots** y sobre todo de **trabajo en equipo**.
 
@@ -41,7 +40,7 @@ npm run dev
 *y compila con `npm run build`*
 
 ## Uso del bot
-Desde discord, con el bot encendido, corre el comando <br>
+Desde discord, con el bot encendido, corre el comando <br
 `<prefix>help`<br>
 Para ver la lista completa de comandos, o para ver la información detallada usa <br>
 `<prefix>help command`
@@ -61,13 +60,7 @@ Por último si quieres contactar con quienes estan incolucrados en este proyecto
 ## Licencia
 [MIT](./LICENSE)
 
-### Colaboradores
-
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
+### Colaboradores ✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -81,4 +74,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Este proyecto sigue las especificaciones de [all-contributors](https://github.com/all-contributors/all-contributors). ¡Cualquier contribución es bienvendia!
