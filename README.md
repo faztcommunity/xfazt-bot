@@ -57,9 +57,6 @@ En **segundo lugar**, puedes ingresar a la sección [ISSUES](https://github.com/
 
 Por último si quieres contactar con quienes estan incolucrados en este proyecto, debajo encontraras una lista de los principales responsables de este bot, y también puedes unirte a la comunidad en Discord de [Fazt Community](https://discord.gg/mFUY4sT) (si esa para la cual estamos haciendo el bot) donde encontraras cientos (sino miles) de desarrolladores con los cuales compartir dudas e ideas, y tambien donde cada cierto tiempo iniciamos proyectos de este mismo estilo donde puedes ser parte desde la concepcion del mismo.
 
-## Licencia
-[MIT](./LICENSE)
-
 ### Colaboradores ✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -75,3 +72,6 @@ Por último si quieres contactar con quienes estan incolucrados en este proyecto
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Este proyecto sigue las especificaciones de [all-contributors](https://github.com/all-contributors/all-contributors). ¡Cualquier contribución es bienvendia!
+
+---
+Bajo la licencia [MIT](https://github.com/faztcommunity/xfazt-bot/blob/main/LICENSE)
