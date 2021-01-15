@@ -6,42 +6,73 @@
     "extends": [
         "eslint:recommended",
         "prettier",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint"
+        "plugin:@typescript-eslint/eslint-recommended"
     ],
+    "plugins": ["@typescript-eslint"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 11,
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
     },
+    "ignorePatterns": ["node_modules/**", "out/**"],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "prefer-const": [
-            "error"
-        ],
-        "eol-last": [
-            "error",
-            "always"
-        ],
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "prefer-const": ["error"],
+        "eol-last": ["error", "always"],
         "no-trailing-spaces": "error",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/ban-types": "off",
-        "@typescript-eslint/no-var-requires": "off"
+        "@typescript-eslint/no-explicit-any": ["off"],
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/array-type": [
+            "error",
+            {
+                "default": "array",
+                "readonly": "array"
+            }
+        ],
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+                "types": {
+                    "Array": "Do not use Array.",
+                    "Object": "Do not use Object.",
+                    "String": "Do not use String."
+                }
+            }
+        ],
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+        "@typescript-eslint/consistent-type-assertions": [
+            "error",
+            {
+                "assertionStyle": "as",
+                "objectLiteralTypeAssertions": "allow"
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "@typescript-eslint/no-non-null-assertion": ["off"],
+        "sort-imports": [
+            "error",
+            {
+                "memberSyntaxSortOrder": ["none", "single", "all", "multiple"],
+                "ignoreDeclarationSort": true
+            }
+        ]
     }
 }
-
