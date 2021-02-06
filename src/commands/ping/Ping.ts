@@ -1,10 +1,17 @@
 import { Message, MessageEmbed } from "discord.js";
 import Command from "../Command";
+import Bot from "../../bot/Bot";
 
 export default class Ping extends Command {
     readonly name = "ping";
     readonly description = "Obtén el tiempo de respuesta del bot";
     readonly alias = ["silbido"];
+    readonly bot: Bot;
+
+    constructor(bot: Bot) {
+        super();
+        this.bot = bot;
+    }
 
     executed(message: Message): void {
         const client = this.bot.client;
