@@ -1,6 +1,5 @@
 import { Message, TextChannel } from "discord.js";
 import Suscriptor from "../bot/eventbroker/Suscriptor";
-import Bot from "bot/Bot";
 
 /**
  * Clase minima para la creación de comandos.
@@ -8,11 +7,6 @@ import Bot from "bot/Bot";
  */
 export default abstract class Command extends Suscriptor<"command"> {
     public event_type: "command" = "command";
-
-    /**
-     * Bot con todas sus configuraciones.
-     */
-    readonly bot: Bot;
 
     /**
      * Nombre del comando.
@@ -29,11 +23,6 @@ export default abstract class Command extends Suscriptor<"command"> {
      * Alias del comando.
      */
     abstract readonly alias: string[];
-
-    constructor(bot: Bot) {
-        super();
-        this.bot = bot;
-    }
 
     /**
      * La función que se ejecuta al recibir una configuración, su implementación es opcional.
