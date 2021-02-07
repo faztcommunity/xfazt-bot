@@ -5,7 +5,7 @@ import { ClientEvents, Message } from "discord.js";
  * @extends ClientEvents
  */
 interface BotEvents extends ClientEvents {
-    command:[string, Message, ...string[]]
+    command: [string, Message, ...string[]];
 }
 export default BotEvents;
 
@@ -18,4 +18,4 @@ export type bot_event = keyof BotEvents;
  * Tipos de eventos del Client.
  * @see https://discord.js.org/#/docs/main/stable/class/Client
  */
-export type client_event = keyof ClientEvents
+export type client_event = keyof ClientEvents;

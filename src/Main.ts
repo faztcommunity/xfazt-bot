@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-if(process.env.NODE_ENV === "development") require("dotenv").config();
+if (process.env.NODE_ENV === "development") require("dotenv").config();
 import { Client } from "discord.js";
 import FaztBot from "./FaztBot";
 import ReadyChannel from "./eventchannels/ReadyChannel";
@@ -9,13 +9,16 @@ import ReadyLog from "./suscriptors/ReadyLog";
 import Ping from "./commands/ping/Ping";
 
 class Main {
-    public static main():void {
+    public static main(): void {
         const client = new Client();
 
-        const bot = new FaztBot({
-            prefix:"!",
-            guild_id:"1"
-        }, client);
+        const bot = new FaztBot(
+            {
+                prefix: "!",
+                guild_id: "1",
+            },
+            client
+        );
 
         const ready_channel = new ReadyChannel(bot);
         const message_channel = new MessageChannel(bot);
@@ -24,7 +27,7 @@ class Main {
         const ready_log = new ReadyLog();
         ready_channel.add_suscriptor(ready_log);
 
-        const ping = new Ping();
+        const ping = new Ping(bot);
         command_channel.add_suscriptor(ping);
 
         bot.on("ready", ready_channel);

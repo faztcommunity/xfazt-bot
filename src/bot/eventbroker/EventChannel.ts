@@ -1,5 +1,5 @@
 import Suscriptor from "./Suscriptor";
-import BotEvents, {bot_event} from "./BotEvents";
+import BotEvents, { bot_event } from "./BotEvents";
 
 /**
  * Clase minima para la creación de canales de eventos.
@@ -12,23 +12,23 @@ export default abstract class EventChannel<Event extends bot_event> {
      * public event_type:"myevent" = "myevent"
      * }
      */
-    public abstract event_type:Event
+    public abstract event_type: Event;
 
     /**
      * Lista de suscriptores.
      * @see https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Set
      */
-    readonly suscriptors:Set<Suscriptor<Event>> = new Set()
+    readonly suscriptors: Set<Suscriptor<Event>> = new Set();
 
     /**
      * El objeto que envía el evento al canal.
      */
-    protected sender:object
+    protected sender: object;
 
     /**
      * @param sender El origen de los eventos.
      */
-    constructor(sender:object){
+    constructor(sender: object) {
         this.sender = sender;
     }
 
@@ -36,7 +36,7 @@ export default abstract class EventChannel<Event extends bot_event> {
      * Añade un suscriptor del mismo tipo de evento del canal.
      * @param suscriptor Un suscriptor de igual tipo de evento del canal.
      */
-    public add_suscriptor(suscriptor:Suscriptor<Event>):this {
+    public add_suscriptor(suscriptor: Suscriptor<Event>): this {
         this.suscriptors.add(suscriptor);
         suscriptor.event_channel = this;
         return this;
@@ -46,7 +46,7 @@ export default abstract class EventChannel<Event extends bot_event> {
      * Remueve un suscriptor de la lista de suscriptores.
      * @param suscriptor Un suscriptor que esté suscripto.
      */
-    public remove_suscriptor(suscriptor:Suscriptor<Event>):this {
+    public remove_suscriptor(suscriptor: Suscriptor<Event>): this {
         this.suscriptors.delete(suscriptor);
         return this;
     }
@@ -55,7 +55,7 @@ export default abstract class EventChannel<Event extends bot_event> {
      * Notifica a todos sus suscriptores que el evento ha ocurrido.
      * @param args Argumentos de la notificación.
      */
-    public notify_all(...args:BotEvents[Event]):void {
-        this.suscriptors.forEach(suscriptor => suscriptor.notified(...args));
+    public notify_all(...args: BotEvents[Event]): void {
+        this.suscriptors.forEach((suscriptor) => suscriptor.notified(...args));
     }
 }
