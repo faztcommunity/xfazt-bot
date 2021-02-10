@@ -1,6 +1,6 @@
 # xFaztBot para Fazt Community
 [![dev chat](https://discordapp.com/api/guilds/466723723853037589/widget.png?style=shield)](https://discord.gg/mFUY4sT)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 xFaztBot es el modulo principal del Bot de Discord para [Fazt Community](https://github.com/faztcommunity), basado en la filosofía OpenSource y pensado para quienes buscan aprender y desarrollar sus capacidades en **JavaScript**, **Typescript**, paradigmas de programación, **Bots** y sobre todo de **trabajo en equipo**.
@@ -63,13 +63,15 @@ Por último si quieres contactar con quienes estan incolucrados en este proyecto
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://enzodiaz.dev"><img src="https://avatars3.githubusercontent.com/u/37701477?v=4" width="100px;" alt=""/><br /><sub><b>Lottie</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Code">💻</a> <a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/leandiez"><img src="https://avatars3.githubusercontent.com/u/8433725?v=4" width="100px;" alt=""/><br /><sub><b>SolidFox</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=leandiez" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://enzodiaz.dev"><img src="https://avatars3.githubusercontent.com/u/37701477?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lottie</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Code">💻</a> <a href="https://github.com/faztcommunity/xfazt-bot/commits?author=EnzoDiazDev" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/leandiez"><img src="https://avatars3.githubusercontent.com/u/8433725?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SolidFox</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=leandiez" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/DavichoStar"><img src="https://avatars.githubusercontent.com/u/33920196?v=4?s=100" width="100px;" alt=""/><br /><sub><b>DavichoStar</b></sub></a><br /><a href="https://github.com/faztcommunity/xfazt-bot/commits?author=DavichoStar" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Este proyecto sigue las especificaciones de [all-contributors](https://github.com/all-contributors/all-contributors). ¡Cualquier contribución es bienvendia!
 
