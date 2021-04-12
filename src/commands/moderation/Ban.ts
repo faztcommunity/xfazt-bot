@@ -7,14 +7,16 @@ export class Ban extends Command {
     readonly description = "Banea a un usuario mencionado del servidor";
     readonly alias = ["banear"];
     readonly bot: Bot;
+    readonly permission = "BAN_MEMBERS";
 
     constructor(bot: Bot) {
         super();
         this.bot = bot;
     }
 
-    async executed(message: Message, userStr: string, ...args: string[]): Promise<any> {
+    async executed(message: Message, userStr: string | undefined, ...args: string[]) {
         if (!message.guild?.me!.hasPermission("BAN_MEMBERS")) return message.reply("`❌|` No tengo permisos de banear en este servidor");
+        if (!userStr) return message.channel.send("`❌|` No colocaste nada. Coloca una ID o menciona al usuario a banear.");
 
         let user = message.mentions.members!.first() || message.guild.members.cache.get(userStr);
         let bReason = args.join(" ");
