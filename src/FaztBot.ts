@@ -4,7 +4,7 @@ import ReadyChannel from "./eventchannels/ReadyChannel";
 import { MessageEmbed, TextChannel } from "discord.js";
 import ReadyLog from "./suscriptors/ReadyLog";
 import * as Commands from "./commands";
-import { Reloj } from "libs";
+import { Reloj } from "./libs";
 import Bot from "./bot/Bot";
 
 export default class FaztBot extends Bot {

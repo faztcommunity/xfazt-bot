@@ -3,9 +3,13 @@
     "version": "1.0.0",
     "description": "La solución definitiva al bot de Fazt Community para Discord",
     "main": "./dist/Main.js",
+    "engines": {
+        "node": "15.x"
+    },
     "scripts": {
-        "build": "tsc",
-        "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts"
+        "build": "tsc -b",
+        "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts",
+        "dev:watch": "cross-env NODE_ENV=development nodemon"
     },
     "repository": {
         "type": "git",

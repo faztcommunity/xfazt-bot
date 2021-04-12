@@ -1,15 +1,17 @@
 {
     "compilerOptions": {
-        "target": "ES6",
-        "module": "CommonJS",
-        "moduleResolution": "Node",
+        "target": "ES2020",
+        "module": "commonjs",
+        "lib": ["ES2020"],
+        "moduleResolution": "node",
         "esModuleInterop": true,
         "strict": true,
+        "sourceMap": true,
         "noImplicitAny": false,
         "outDir": "./dist/",
         "baseUrl": "./src/",
         "experimentalDecorators": true
     },
-    "exclude": ["./node_modules/", "./dist/"],
+    "exclude": ["./node_modules/", "./dist/", "**/*.spec.ts"],
     "include": ["./src/"]
 }
