@@ -8,7 +8,7 @@ import Ban from "./bot/commands/moderation/Ban";
 
 
 class Main {
-    private static bot = new FaztBot({ prefix: "!", guild_allowed: "408626752257261578" })
+    private static bot = new FaztBot({ prefix: "!", guild_allowed: process.env.GUILD_ALLOWED as string })
 
     private static setup() {
         const ready_channel = this.bot.new_EventChannel("ready");
