@@ -1,18 +1,11 @@
 import { Message, MessageEmbed } from "discord.js";
 import Command from "../Command";
-import Bot from "../../bot/Bot";
 
-export class Ban extends Command {
+export default class Ban extends Command {
     readonly name = "ban";
     readonly description = "Banea a un usuario mencionado del servidor";
     readonly alias = ["banear"];
-    readonly bot: Bot;
     readonly permission = "BAN_MEMBERS";
-
-    constructor(bot: Bot) {
-        super();
-        this.bot = bot;
-    }
 
     async executed(message: Message, userStr: string | undefined, ...args: string[]) {
         if (!message.guild?.me!.hasPermission("BAN_MEMBERS")) return message.reply("`❌|` No tengo permisos de banear en este servidor");
