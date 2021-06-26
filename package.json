@@ -45,6 +45,7 @@
         "typescript": "^4.0.3"
     },
     "dependencies": {
+        "@enzodiazdev/bottie": "^1.0.7",
         "discord.js": "^12.5.1"
     }
 }

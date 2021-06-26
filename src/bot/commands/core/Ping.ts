@@ -1,8 +1,8 @@
 import { Message, MessageEmbed } from "discord.js";
 import Command from "../Command";
-import Bot from "../../bot/Bot";
+import Bot from "../../FaztBot";
 
-export class Ping extends Command {
+export default class Ping extends Command {
     readonly name = "ping";
     readonly description = "Obtén el tiempo de respuesta del bot";
     readonly alias = ["silbido"];

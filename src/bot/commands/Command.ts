@@ -1,5 +1,5 @@
 import { Message, PermissionString, TextChannel } from "discord.js";
-import Suscriptor from "../bot/eventbroker/Suscriptor";
+import { Suscriptor } from "@enzodiazdev/bottie";
 
 /**
  * Clase minima para la creación de comandos.
@@ -27,7 +27,7 @@ export default abstract class Command extends Suscriptor<"command"> {
     /**
      * Permiso requerido para usar el comando.
      */
-    readonly permission?: PermissionString;
+    //readonly permission?: PermissionString;
 
     /**
      * La función que se ejecuta al recibir una configuración, su implementación es opcional.
@@ -62,10 +62,10 @@ export default abstract class Command extends Suscriptor<"command"> {
 
     public notified(command_name: string, message: Message, ...args: string[]): any {
         if (this.is_for_this(command_name)) {
-            if (this.permission) {
-                if ((process.env.ROL_MOD && !message.member?.roles.cache.get(process.env.ROL_MOD)) || !message.member?.hasPermission(this.permission))
-                    return message.channel.send("`⛔|` No tienes los permisos requeridos para usar este comando.");
-            }
+            // if (this.permission) {
+            //     if ((process.env.ROL_MOD && !message.member?.roles.cache.get(process.env.ROL_MOD)) || !message.member?.hasPermission(this.permission))
+            //         return message.channel.send("`⛔|` No tienes los permisos requeridos para usar este comando.");
+            // }
 
             this.executed(message, ...args);
         }
